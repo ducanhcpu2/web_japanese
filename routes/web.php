@@ -14,3 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('index',[
+   'as' => 'index',
+   'uses'=>'pageController@getIndex',
+]);
+
+Route::get('gallery',[
+    'as' => 'gallery',
+    'uses'=>'pageController@getGallery',
+]);
+
+Route::get('about',[
+    'as' => 'about',
+    'uses'=>'pageController@getAbout',
+]);
+
+Route::get('contact',[
+    'as' => 'contact',
+    'uses'=>'pageController@getContact',
+]);

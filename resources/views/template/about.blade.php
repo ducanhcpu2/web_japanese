@@ -26,11 +26,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //Meta tag Keywords -->
 
 	<!-- Custom-Files -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="layout/css/bootstrap.css">
 	<!-- Bootstrap-Core-CSS -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="layout/css/style.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="layout/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
 	<!-- //Custom-Files -->
 
@@ -45,57 +45,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- main banner -->
 	<div class="main-top-2" id="home">
 		<!-- header -->
-		<header>
-			<div class="container-fluid">
-				<div class="header d-md-flex justify-content-between align-items-center py-3 px-xl-5 px-lg-3 px-2">
-					<!-- logo -->
-					<div id="logo">
-						<h1><a href="index.html">Draw</a></h1>
-					</div>
-					<!-- //logo -->
-					<!-- nav -->
-					<div class="nav_w3ls">
-						<nav>
-							<label for="drop" class="toggle">Menu</label>
-							<input type="checkbox" id="drop" />
-							<ul class="menu">
-								<li><a href="index.html" class="active">Home</a></li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
-								<li>
-									<!-- First Tier Drop Down -->
-									<label for="drop-2" class="toggle toogle-2">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
-									</label>
-									<a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-									<input type="checkbox" id="drop-2" />
-									<ul>
-										<li><a href="#services" class="drop-text">Services</a></li>
-										<li><a href="#team" class="drop-text">Team</a></li>
-										<li><a href="#stats" class="drop-text">Statistics</a></li>
-										<li><a href="#testi" class="drop-text">Testimonials</a></li>
-										<li><a href="#sub" class="drop-text">Subscribe Form</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</nav>
-					</div>
-					<!-- //nav -->
-				</div>
-			</div>
-		</header>
+        @include('template.sub-main-top')
 		<!-- //header -->
 	</div>
 	<!-- //main banner -->
 	<!-- page details -->
-	<div class="breadcrumb-w3pvt">
-		<ol class="breadcrumb mb-0 text-center">
-			<li class="breadcrumb-item">
-				<a href="index.html">Home</a>
-			</li>
-			<li class="breadcrumb-item active" aria-current="page">About Us</li>
-		</ol>
-	</div>
+    @include('template.page-detail')
 	<!-- //page details -->
 
 	<!-- about  -->
@@ -253,7 +208,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="d-flex team-w3pvts-row">
 				<div class="col-lg-4 col-md-6">
 					<div class="box20">
-						<img src="images/t1.jpg" alt="" class="img-fluid" />
+						<img src="layout/images/t1.jpg" alt="" class="img-fluid" />
 						<div class="box-content">
 							<h3 class="title">willimson</h3>
 							<span class="post">Designation</span>
@@ -274,7 +229,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-lg-4 col-md-6 mt-md-0 mt-4">
 					<div class="box20">
-						<img src="images/t2.jpg" alt="" class="img-fluid" />
+						<img src="layout/images/t2.jpg" alt="" class="img-fluid" />
 						<div class="box-content">
 							<h3 class="title">Kristiana</h3>
 							<span class="post">Designation</span>
@@ -295,7 +250,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-lg-4 col-md-6 mt-lg-0 mt-4 mx-auto">
 					<div class="box20">
-						<img src="images/t3.jpg" alt="" class="img-fluid" />
+						<img src="layout/images/t3.jpg" alt="" class="img-fluid" />
 						<div class="box-content">
 							<h3 class="title">franklin</h3>
 							<span class="post">Designation</span>
@@ -323,7 +278,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<section class="testimonials text-center py-5" id="testi">
 		<div class="container py-xl-5 py-lg-3">
 			<div class="py-xl-4 py-lg-2">
-				<img src="images/testi2.jpg" alt="" class="img-fluid test-img" />
+				<img src="layout/images/testi2.jpg" alt="" class="img-fluid test-img" />
 				<h3 class="mt-4 mb-2">Jenifer Burns</h3>
 				<ul class="list-unstyled w3ls-icons clients">
 					<li>
@@ -388,27 +343,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container py-xl-5 py-lg-3">
 			<div class="row">
 				<div class="col-md-2 col-sm-4 col-6 spons-one">
-					<img src="images/sp1.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp1.png" alt="" class="img-fluid" />
 					<p>Sed Dos</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one">
-					<img src="images/sp2.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp2.png" alt="" class="img-fluid" />
 					<p>eiu smod</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one mt-sm-0 mt-3">
-					<img src="images/sp3.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp3.png" alt="" class="img-fluid" />
 					<p>ut lab</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one mt-md-0 mt-3">
-					<img src="images/sp4.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp4.png" alt="" class="img-fluid" />
 					<p>ore etdo</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one mt-md-0 mt-3">
-					<img src="images/sp5.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp5.png" alt="" class="img-fluid" />
 					<p>lore ma</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one mt-md-0 mt-3">
-					<img src="images/sp6.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp6.png" alt="" class="img-fluid" />
 					<p>na aliqu</p>
 				</div>
 			</div>

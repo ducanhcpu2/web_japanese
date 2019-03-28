@@ -26,13 +26,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //Meta tag Keywords -->
 
 	<!-- Custom-Files -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="layout/css/bootstrap.css">
 	<!-- Bootstrap-Core-CSS -->
-	<link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all">
+	<link href="layout/css/css_slider.css" type="text/css" rel="stylesheet" media="all">
 	<!-- banner slider -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="layout/css/style.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="layout/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
 	<!-- //Custom-Files -->
 
@@ -45,93 +45,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
 	<!-- main banner -->
-	<div class="main-top" id="home">
-		<!-- header -->
-		<header>
-			<div class="container-fluid">
-				<div class="header d-md-flex justify-content-between align-items-center py-3 px-xl-5 px-lg-3 px-2">
-					<!-- logo -->
-					<div id="logo">
-						<h1><a href="index.html">Draw</a></h1>
-					</div>
-					<!-- //logo -->
-					<!-- nav -->
-					<div class="nav_w3ls">
-						<nav>
-							<label for="drop" class="toggle">Menu</label>
-							<input type="checkbox" id="drop" />
-							<ul class="menu">
-								<li><a href="index.html" class="active">Home</a></li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
-								<li>
-									<!-- First Tier Drop Down -->
-									<label for="drop-2" class="toggle toogle-2">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
-									</label>
-									<a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-									<input type="checkbox" id="drop-2" />
-									<ul>
-										<li><a href="#services" class="drop-text">Services</a></li>
-										<li><a href="about.html" class="drop-text">Team</a></li>
-										<li><a href="about.html" class="drop-text">Statistics</a></li>
-										<li><a href="#testi" class="drop-text">Testimonials</a></li>
-										<li><a href="#sub" class="drop-text">Subscribe Form</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</nav>
-					</div>
-					<!-- //nav -->
-				</div>
-			</div>
-		</header>
-		<!-- //header -->
 
-		<!-- banner -->
-		<div class="banner_w3lspvt">
-			<div class="csslider infinity" id="slider1">
-				<input type="radio" name="slides" checked="checked" id="slides_1" />
-				<input type="radio" name="slides" id="slides_2" />
-				<input type="radio" name="slides" id="slides_3" />
-				<ul class="banner_slide_bg">
-					<li>
-						<div class="container">
-							<div class="w3ls_banner_txt text-center">
-								<h3 class="w3ls_pvt-title text-wh text-uppercase let">W3layouts Website</h3>
-								<p class="text-li">New HTML Responsive Templates Generation</p>
-								<a href="https://w3layouts.com/free-responsive-html5-css3-website-templates/" target="_blank" class="btn button-style mt-sm-5 mt-4">Browse All</a>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="container">
-							<div class="w3ls_banner_txt text-center">
-								<h3 class="w3ls_pvt-title text-wh text-uppercase let">W3layouts Website</h3>
-								<p class="text-li">New HTML Responsive Templates Generation</p>
-								<a href="https://w3layouts.com/free-responsive-html5-css3-website-templates/" target="_blank" class="btn button-style mt-sm-5 mt-4">Browse All</a>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="container">
-							<div class="w3ls_banner_txt text-center">
-								<h3 class="w3ls_pvt-title text-wh text-uppercase let">W3layouts Website</h3>
-								<p class="text-bl">New HTML Responsive Templates Generation</p>
-								<a href="https://w3layouts.com/free-responsive-html5-css3-website-templates/" target="_blank" class="btn button-style mt-sm-5 mt-4">Browse All</a>
-							</div>
-						</div>
-					</li>
-				</ul>
-				<div class="arrows">
-					<label for="slides_1"></label>
-					<label for="slides_2"></label>
-					<label for="slides_3"></label>
-				</div>
-			</div>
-		</div>
-		<!-- //banner -->
-	</div>
+    @include('template.main-top')
 	<!-- //main banner -->
 
 	<!-- about-->
@@ -144,7 +59,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="row pt-lg-4">
 				<div class="col-lg-6">
 					<div class="single_grid_w3 single_grid_w3">
-						<img src="images/s1.jpg" alt="" class="img-fluid" />
+						<img src="layout/images/s1.jpg" alt="" class="img-fluid" />
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -153,14 +68,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<hr>
 						<p>Subheadings stand out because they are like mini titles. They make your post stand out and
 							make it more readable.</p>
-						<a class="btn mt-sm-5 mt-4 button-style-2" href="about.html">View More</a>
+						<a class="btn mt-sm-5 mt-4 button-style-2" href="{{route('about')}}">View More</a>
 					</div>
 				</div>
 			</div>
 			<div class="row flex-row-reverse sec-space">
 				<div class="col-lg-6 pr-lg-0 clo-res">
 					<div class="single_grid_w3 single_grid_w31">
-						<img src="images/s2.jpg" alt="" class="img-fluid" />
+						<img src="layout/images/s2.jpg" alt="" class="img-fluid" />
 					</div>
 				</div>
 				<div class="col-lg-6 pl-lg-0 clo-res">
@@ -169,14 +84,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<hr>
 						<p>Subheadings stand out because they are like mini titles. They make your post stand out and
 							make it more readable.</p>
-						<a class="btn mt-sm-5 mt-4 button-style-2" href="about.html">View More</a>
+						<a class="btn mt-sm-5 mt-4 button-style-2" href="{{route('about')}}">View More</a>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="single_grid_w3 single_grid_w32">
-						<img src="images/s3.jpg" alt="" class="img-fluid" />
+						<img src="layout/images/s3.jpg" alt="" class="img-fluid" />
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -185,7 +100,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<hr>
 						<p>Subheadings stand out because they are like mini titles. They make your post stand out and
 							make it more readable.</p>
-						<a class="btn mt-sm-5 mt-4 button-style-2" href="about.html">View More</a>
+						<a class="btn mt-sm-5 mt-4 button-style-2" href="{{route('about')}}">View More</a>
 					</div>
 				</div>
 			</div>
@@ -265,7 +180,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<section class="testimonials text-center py-5" id="testi">
 		<div class="container py-xl-5 py-lg-3">
 			<div class="py-xl-4 py-lg-2">
-				<img src="images/testi2.jpg" alt="" class="img-fluid test-img" />
+				<img src="layout/images/testi2.jpg" alt="" class="img-fluid test-img" />
 				<h3 class="mt-4 mb-2">Jenifer Burns</h3>
 				<ul class="list-unstyled w3ls-icons clients">
 					<li>
@@ -330,27 +245,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container py-xl-5 py-lg-3">
 			<div class="row">
 				<div class="col-md-2 col-sm-4 col-6 spons-one">
-					<img src="images/sp1.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp1.png" alt="" class="img-fluid" />
 					<p>Sed Dos</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one">
-					<img src="images/sp2.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp2.png" alt="" class="img-fluid" />
 					<p>eiu smod</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one mt-sm-0 mt-3">
-					<img src="images/sp3.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp3.png" alt="" class="img-fluid" />
 					<p>ut lab</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one mt-md-0 mt-3">
-					<img src="images/sp4.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp4.png" alt="" class="img-fluid" />
 					<p>ore etdo</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one mt-md-0 mt-3">
-					<img src="images/sp5.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp5.png" alt="" class="img-fluid" />
 					<p>lore ma</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-6 spons-one mt-md-0 mt-3">
-					<img src="images/sp6.png" alt="" class="img-fluid" />
+					<img src="layout/images/sp6.png" alt="" class="img-fluid" />
 					<p>na aliqu</p>
 				</div>
 			</div>
@@ -359,99 +274,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //sponsors -->
 
 	<!-- footer -->
-	<footer class="py-sm-5 py-4">
-		<div class="container-fluid px-sm-5 py-xl-4">
-			<div class="row footer-top">
-				<div class="col-lg-4 col-md-6 footer-grid_section_1its">
-					<h2 class="logo-2 mb-lg-4 mb-3">
-						<a href="index.html">Draw</a>
-					</h2>
-					<!-- social icons -->
-					<div class="mobamuinfo_social_icons">
-						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<h4 class="sub-con-fo mt-4 mb-3">Catch on Social</h4>
-						<ul class="mobamuits_social_list list-unstyled">
-							<li class="w3_mobamu_facebook">
-								<a href="#">
-									<span class="fa fa-facebook-f"></span>
-								</a>
-							</li>
-							<li class="w3_mobamu_twitter">
-								<a href="#">
-									<span class="fa fa-twitter"></span>
-								</a>
-							</li>
-							<li class="w3_mobamu_dribble">
-								<a href="#">
-									<span class="fa fa-dribbble"></span>
-								</a>
-							</li>
-							<li class="w3_mobamu_google">
-								<a href="#">
-									<span class="fa fa-google-plus"></span>
-								</a>
-							</li>
-						</ul>
-						<!-- social icons -->
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-6 footer-grid_section_1its mt-md-0 mt-5">
-					<h3 class="footer-title mb-lg-4 mb-3">Navigation</h3>
-					<ul class="list-unstyled">
-						<li class="mt-3">
-							<a href="index.html">Home</a>
-						</li>
-						<li class="mt-3">
-							<a href="about.html">About Us</a>
-						</li>
-						<li class="mt-3">
-							<a href="gallery.html">Gallery</a>
-						</li>
-						<li class="mt-3">
-							<a href="#services">Services</a>
-						</li>
-						<li class="mt-3">
-							<a href="contact.html">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-lg-3 col-md-6 footer-grid_section_1its mt-lg-0 mt-5">
-					<h3 class="footer-title mb-lg-4 mb-3">Recent Comments</h3>
-					<div class="contact-info">
-						<div class="footer-style-w3ls mt-4">
-							<p class="font-italic">Petey Cruiser</p>
-							<span class="mb-2 let">Sed do eiusmod tempor labore</span>
-						</div>
-						<div class="footer-style-w3ls mt-4">
-							<p class="font-italic">Anna Sthesia</p>
-							<span class="mb-2 let">Lorem ipsum dolor sit amet</span>
-						</div>
-						<div class="footer-style-w3ls mt-4">
-							<p class="font-italic">Bob Frapples</p>
-							<span class="mb-2 let">Sed do eiusm odor ut labore eius mod tempor.</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6 footer-grid_section_1its mt-lg-0 mt-5">
-					<h3 class="footer-title mb-lg-4 mb-3">Contact Info</h3>
-					<div class="contact-info">
-						<div class="footer-style-w3ls mt-4">
-							<h4 class="mb-2">Phone</h4>
-							<p>+121 098 8907 9987</p>
-						</div>
-						<div class="footer-style-w3ls mt-4">
-							<h4 class="mb-2">Email </h4>
-							<p><a href="mailto:info@example.com">info@example.com</a></p>
-						</div>
-						<div class="footer-style-w3ls mt-4">
-							<h4 class="mb-2">Location</h4>
-							<p>Honey Avenue, New York City</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+
+    @include('template.footer')
 	<!-- //footer -->
 	<!-- copyright -->
 	<div class="cpy-right text-center py-4">

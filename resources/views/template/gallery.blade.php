@@ -26,11 +26,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //Meta tag Keywords -->
 
 	<!-- Custom-Files -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="layout/css/bootstrap.css">
 	<!-- Bootstrap-Core-CSS -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="layout/css/style.css" type="text/css" media="all" />
 	<!-- Style-CSS -->
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="layout/css/font-awesome.min.css" rel="stylesheet">
 	<!-- Font-Awesome-Icons-CSS -->
 	<!-- //Custom-Files -->
 
@@ -45,57 +45,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- main banner -->
 	<div class="main-top-2" id="home">
 		<!-- header -->
-		<header>
-			<div class="container-fluid">
-				<div class="header d-md-flex justify-content-between align-items-center py-3 px-xl-5 px-lg-3 px-2">
-					<!-- logo -->
-					<div id="logo">
-						<h1><a href="index.html">Draw</a></h1>
-					</div>
-					<!-- //logo -->
-					<!-- nav -->
-					<div class="nav_w3ls">
-						<nav>
-							<label for="drop" class="toggle">Menu</label>
-							<input type="checkbox" id="drop" />
-							<ul class="menu">
-								<li><a href="index.html" class="active">Home</a></li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="gallery.html">Gallery</a></li>
-								<li>
-									<!-- First Tier Drop Down -->
-									<label for="drop-2" class="toggle toogle-2">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span>
-									</label>
-									<a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-									<input type="checkbox" id="drop-2" />
-									<ul>
-										<li><a href="index.html" class="drop-text">Services</a></li>
-										<li><a href="about.html" class="drop-text">Team</a></li>
-										<li><a href="about.html" class="drop-text">Statistics</a></li>
-										<li><a href="index.html" class="drop-text">Testimonials</a></li>
-										<li><a href="index.html" class="drop-text">Subscribe Form</a></li>
-									</ul>
-								</li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</nav>
-					</div>
-					<!-- //nav -->
-				</div>
-			</div>
-		</header>
+        @include('template.sub-main-top')
 		<!-- //header -->
 	</div>
 	<!-- //main banner -->
 	<!-- page details -->
-	<div class="breadcrumb-w3pvt">
-		<ol class="breadcrumb mb-0 text-center">
-			<li class="breadcrumb-item">
-				<a href="index.html">Home</a>
-			</li>
-			<li class="breadcrumb-item active" aria-current="page">Gallery</li>
-		</ol>
-	</div>
+	@include('template.page-detail')
 	<!-- //page details -->
 
 	<!-- gallery -->
@@ -111,7 +66,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="img-grid">
 							<div class="Portfolio-grid1">
 								<a href="#gal1">
-									<img src="images/g1.jpg" alt=" " class="img-fluid" />
+									<img src="layout/images/g1.jpg" alt=" " class="img-fluid" />
 								</a>
 							</div>
 							<div class="port-desc text-center">
@@ -127,7 +82,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="img-grid">
 							<div class="Portfolio-grid1">
 								<a href="#gal2">
-									<img src="images/g2.jpg" alt=" " class="img-fluid" />
+									<img src="layout/images/g2.jpg" alt=" " class="img-fluid" />
 								</a>
 							</div>
 							<div class="port-desc text-center">
@@ -143,7 +98,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="img-grid">
 							<div class="Portfolio-grid1">
 								<a href="#gal3">
-									<img src="images/g3.jpg" alt=" " class="img-fluid" />
+									<img src="layout/images/g3.jpg" alt=" " class="img-fluid" />
 								</a>
 							</div>
 							<div class="port-desc text-center">
@@ -159,7 +114,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="img-grid">
 							<div class="Portfolio-grid1">
 								<a href="#gal4">
-									<img src="images/g4.jpg" alt=" " class="img-fluid" />
+									<img src="layout/images/g4.jpg" alt=" " class="img-fluid" />
 								</a>
 							</div>
 							<div class="port-desc text-center">
@@ -175,7 +130,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="img-grid">
 							<div class="Portfolio-grid1">
 								<a href="#gal5">
-									<img src="images/g5.jpg" alt=" " class="img-fluid" />
+									<img src="layout/images/g5.jpg" alt=" " class="img-fluid" />
 								</a>
 							</div>
 							<div class="port-desc text-center">
@@ -191,7 +146,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="img-grid">
 							<div class="Portfolio-grid1">
 								<a href="#gal6">
-									<img src="images/g6.jpg" alt=" " class="img-fluid" />
+									<img src="layout/images/g6.jpg" alt=" " class="img-fluid" />
 								</a>
 							</div>
 							<div class="port-desc text-center">
@@ -207,7 +162,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="img-grid">
 							<div class="Portfolio-grid1">
 								<a href="#gal7">
-									<img src="images/s3.jpg" alt=" " class="img-fluid" />
+									<img src="layout/images/s3.jpg" alt=" " class="img-fluid" />
 								</a>
 							</div>
 							<div class="port-desc text-center">
@@ -223,7 +178,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="img-grid">
 							<div class="Portfolio-grid1">
 								<a href="#gal8">
-									<img src="images/s2.jpg" alt=" " class="img-fluid" />
+									<img src="layout/images/s2.jpg" alt=" " class="img-fluid" />
 								</a>
 							</div>
 							<div class="port-desc text-center">
@@ -239,7 +194,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="img-grid">
 							<div class="Portfolio-grid1">
 								<a href="#gal9">
-									<img src="images/s1.jpg" alt=" " class="img-fluid" />
+									<img src="layout/images/s1.jpg" alt=" " class="img-fluid" />
 								</a>
 							</div>
 							<div class="port-desc text-center">
@@ -256,7 +211,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- popup-->
 			<div id="gal1" class="popup-effect animate">
 				<div class="popup">
-					<img src="images/g1.jpg" alt="Popup Image" class="img-fluid" />
+					<img src="layout/images/g1.jpg" alt="Popup Image" class="img-fluid" />
 					<p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
 					<a class="close" href="#gallery">&times;</a>
 				</div>
@@ -265,7 +220,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- popup-->
 			<div id="gal2" class="popup-effect animate">
 				<div class="popup">
-					<img src="images/g2.jpg" alt="Popup Image" class="img-fluid" />
+					<img src="layout/images/g2.jpg" alt="Popup Image" class="img-fluid" />
 					<p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
 					<a class="close" href="#gallery">&times;</a>
 				</div>
@@ -274,7 +229,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- popup-->
 			<div id="gal3" class="popup-effect animate">
 				<div class="popup">
-					<img src="images/g3.jpg" alt="Popup Image" class="img-fluid" />
+					<img src="layout/images/g3.jpg" alt="Popup Image" class="img-fluid" />
 					<p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
 					<a class="close" href="#gallery">&times;</a>
 				</div>
@@ -283,7 +238,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- popup-->
 			<div id="gal4" class="popup-effect animate">
 				<div class="popup">
-					<img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
+					<img src="layout/images/g4.jpg" alt="Popup Image" class="img-fluid" />
 					<p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
 					<a class="close" href="#gallery">&times;</a>
 				</div>
@@ -292,7 +247,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- popup-->
 			<div id="gal5" class="popup-effect animate">
 				<div class="popup">
-					<img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
+					<img src="layout/images/g5.jpg" alt="Popup Image" class="img-fluid" />
 					<p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
 					<a class="close" href="#gallery">&times;</a>
 				</div>
@@ -301,7 +256,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- popup-->
 			<div id="gal6" class="popup-effect animate">
 				<div class="popup">
-					<img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
+					<img src="layout/images/g6.jpg" alt="Popup Image" class="img-fluid" />
 					<p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
 					<a class="close" href="#gallery">&times;</a>
 				</div>
@@ -310,7 +265,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- popup-->
 			<div id="gal7" class="popup-effect animate">
 				<div class="popup">
-					<img src="images/s3.jpg" alt="Popup Image" class="img-fluid" />
+					<img src="layout/images/s3.jpg" alt="Popup Image" class="img-fluid" />
 					<p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
 					<a class="close" href="#gallery">&times;</a>
 				</div>
@@ -319,7 +274,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- popup-->
 			<div id="gal8" class="popup-effect animate">
 				<div class="popup">
-					<img src="images/s2.jpg" alt="Popup Image" class="img-fluid" />
+					<img src="layout/images/s2.jpg" alt="Popup Image" class="img-fluid" />
 					<p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
 					<a class="close" href="#gallery">&times;</a>
 				</div>
@@ -328,7 +283,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- popup-->
 			<div id="gal9" class="popup-effect animate">
 				<div class="popup">
-					<img src="images/s1.jpg" alt="Popup Image" class="img-fluid" />
+					<img src="layout/images/s1.jpg" alt="Popup Image" class="img-fluid" />
 					<p class="mt-4">Nulla viverra pharetra se, eget pulvinar neque pharetra ac int. placerat placerat dolor.</p>
 					<a class="close" href="#gallery">&times;</a>
 				</div>
@@ -344,7 +299,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="row footer-top">
 				<div class="col-lg-4 col-md-6 footer-grid_section_1its">
 					<h2 class="logo-2 mb-lg-4 mb-3">
-						<a href="index.html">Draw</a>
+						<a href="{{route('index')}}">Draw</a>
 					</h2>
 					<!-- social icons -->
 					<div class="mobamuinfo_social_icons">
@@ -379,19 +334,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h3 class="footer-title mb-lg-4 mb-3">Navigation</h3>
 					<ul class="list-unstyled">
 						<li class="mt-3">
-							<a href="index.html">Home</a>
+							<a href="{{route('index')}}">Home</a>
 						</li>
 						<li class="mt-3">
-							<a href="about.html">About Us</a>
+							<a href="{{route('about')}}">About Us</a>
 						</li>
 						<li class="mt-3">
-							<a href="gallery.html">Gallery</a>
+							<a href="{{route('gallery')}}">Gallery</a>
 						</li>
 						<li class="mt-3">
-							<a href="index.html">Services</a>
+							<a href="{{route('index')}}">Services</a>
 						</li>
 						<li class="mt-3">
-							<a href="contact.html">Contact Us</a>
+							<a href="{{route('contact')}}">Contact Us</a>
 						</li>
 					</ul>
 				</div>
