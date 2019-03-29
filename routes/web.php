@@ -44,3 +44,8 @@ Route::get('register',[
   'as' => 'register',
   'uses'=>'pageController@getRegister',
 ]);
+
+Route::get('test-api',[
+  'as' => 'test-api',
+  'uses'=>'pageController@getRegister',
+]);
