@@ -13,16 +13,26 @@ class pageController extends Controller
 
     public function getGallery()
     {
-        return view('template.gallery');
+        return view('template.page.gallery');
     }
 
     public function getAbout()
     {
-        return view('template.about');
+        return view('template.page.about');
     }
 
     public function getContact()
     {
-        return view('template.contact');
+        return view('template.page.contact');
+    }
+
+    public function getLogin()
+    {
+        return view('template.page.login');
+    }
+
+    public function getRegister()
+    {
+      return view('template.page.register');
     }
 }

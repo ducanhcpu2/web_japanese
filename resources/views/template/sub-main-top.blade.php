@@ -30,7 +30,8 @@
                             </ul>
                         </li>
                         <li><a href="{{route('contact')}}">Contact Us</a></li>
-                        <li><a href="{{route('index')}}" class="active">Login</a></li>
+                        <li><a href="{{route('login')}}" class="active">Login</a></li>
+                        <li><a href="{{route('register')}}" class="active">Register</a></li>
                     </ul>
                 </nav>
             </div>

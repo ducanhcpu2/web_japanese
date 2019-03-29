@@ -557,7 +557,7 @@ a.reqe-button {
 }
 
 .csslider>ul>li:first-child {
-    background: url(../images/1.jpg) no-repeat center;
+    background: url(../images/slide.jpeg) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -1152,7 +1152,7 @@ h5.main-title-w3pvt {
 
 /* inner page */
 .main-top-2 {
-    background: url(../images/1.jpg) no-repeat 0 -100px;
+    background: url(../images/slide.jpeg) no-repeat 0 -100px;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;

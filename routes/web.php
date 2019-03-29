@@ -34,3 +34,13 @@ Route::get('contact',[
     'as' => 'contact',
     'uses'=>'pageController@getContact',
 ]);
+
+Route::get('login',[
+  'as' => 'login',
+  'uses'=>'pageController@getLogin',
+]);
+
+Route::get('register',[
+  'as' => 'register',
+  'uses'=>'pageController@getRegister',
+]);

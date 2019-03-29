@@ -59,7 +59,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="row pt-lg-4">
 				<div class="col-lg-6">
 					<div class="single_grid_w3 single_grid_w3">
-						<img src="layout/images/s1.jpg" alt="" class="img-fluid" />
+						<img src="layout/images/japan1.jpeg" alt="" class="img-fluid" />
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -75,7 +75,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="row flex-row-reverse sec-space">
 				<div class="col-lg-6 pr-lg-0 clo-res">
 					<div class="single_grid_w3 single_grid_w31">
-						<img src="layout/images/s2.jpg" alt="" class="img-fluid" />
+						<img src="layout/images/japan2.jpeg" alt="" class="img-fluid" />
 					</div>
 				</div>
 				<div class="col-lg-6 pl-lg-0 clo-res">
@@ -91,7 +91,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="single_grid_w3 single_grid_w32">
-						<img src="layout/images/s3.jpg" alt="" class="img-fluid" />
+						<img src="layout/images/japan3.jpeg" alt="" class="img-fluid" />
 					</div>
 				</div>
 				<div class="col-lg-6">

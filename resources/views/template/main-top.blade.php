@@ -13,8 +13,17 @@
                 <li>
                     <div class="container">
                         <div class="w3ls_banner_txt text-center">
-                            <h3 class="w3ls_pvt-title text-wh text-uppercase let">W3layouts Website</h3>
-                            <p class="text-li">New HTML Responsive Templates Generation</p>
+                            <h3 class="w3ls_pvt-title text-wh text-uppercase let">日本語</h3>
+                            <p class="text-li">きんべんはせいこうのはは</p>
+                            <a href="#" target="_blank" class="btn button-style mt-sm-5 mt-4">Learning now</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <div class="w3ls_banner_txt text-center">
+                            <h3 class="w3ls_pvt-title text-wh text-uppercase let">日本語</h3>
+                            <p class="text-li">きんべんはせいこうのはは</p>
                             <a href="https://w3layouts.com/free-responsive-html5-css3-website-templates/" target="_blank" class="btn button-style mt-sm-5 mt-4">Browse All</a>
                         </div>
                     </div>
@@ -22,17 +31,8 @@
                 <li>
                     <div class="container">
                         <div class="w3ls_banner_txt text-center">
-                            <h3 class="w3ls_pvt-title text-wh text-uppercase let">W3layouts Website</h3>
-                            <p class="text-li">New HTML Responsive Templates Generation</p>
-                            <a href="https://w3layouts.com/free-responsive-html5-css3-website-templates/" target="_blank" class="btn button-style mt-sm-5 mt-4">Browse All</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="container">
-                        <div class="w3ls_banner_txt text-center">
-                            <h3 class="w3ls_pvt-title text-wh text-uppercase let">W3layouts Website</h3>
-                            <p class="text-bl">New HTML Responsive Templates Generation</p>
+                            <h3 class="w3ls_pvt-title text-wh text-uppercase let">日本語</h3>
+                            <p class="text-bl">きんべんはせいこうのはは</p>
                             <a href="https://w3layouts.com/free-responsive-html5-css3-website-templates/" target="_blank" class="btn button-style mt-sm-5 mt-4">Browse All</a>
                         </div>
                     </div>
