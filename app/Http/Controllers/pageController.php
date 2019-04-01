@@ -42,6 +42,11 @@ class pageController extends Controller
         return view('template.page.register');
     }
 
+    public function getAdmin()
+    {
+        return view('template.admin.admin');
+    }
+
     public function postLogin(Request $request)
     {
         $this->validate($request,

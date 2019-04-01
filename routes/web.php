@@ -50,6 +50,11 @@ Route::get('test-api', [
     'uses' => 'pageController@getRegister',
 ]);
 
+Route::get('admin', [
+    'as' => 'admin',
+    'uses' => 'pageController@getAdmin',
+]);
+
 Route::post('login', 'pageController@postLogin');
 
 Route::get('', 'homeController@getIndex');
