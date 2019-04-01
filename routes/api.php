@@ -19,6 +19,6 @@ use Illuminate\Http\Request;
 
 //   api/admin/list-users
 Route::group(['prefix' => 'admin'], function () {
-  Route::get('list-users', 'API\AdminController@getUsers');
+    Route::get('list-users', 'API\AdminController@getUsers');
 });
 

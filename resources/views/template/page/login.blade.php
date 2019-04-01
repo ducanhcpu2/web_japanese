@@ -25,10 +25,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="form">
     <h1>Connective Login Form</h1>
     <div class="form-content">
-        <form action="#" method="post">
+        <form action="{{route('login')}}" method="post">
+            <input type="hidden" name="_token" value="{{csrf_token()}}">
             <div class="form-info">
                 <h2>Login</h2>
             </div>
+            @if(Session::has('notification'))
+                <div class="alert alert-{{Session::get('flag')}}">{{Session::get('notification')}}</div>
+            @endif
             <div class="email-w3l">
                 <span class="i1"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
                 <input class="email" type="email" name="email" placeholder="Email" required="">
@@ -36,7 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="pass-w3l">
                 <!---728x90--->
                 <span class="i2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
-                <input class="pass" type="password" name="password" placeholder="Password" required="">
+                <input class="pass" type="password" name="pass" placeholder="Password" required="">
             </div>
             <div class="form-check">
                 <div class="left">

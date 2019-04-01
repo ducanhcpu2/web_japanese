@@ -15,37 +15,48 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('index',[
-   'as' => 'index',
-   'uses'=>'pageController@getIndex',
+Route::get('index', [
+    'as' => 'index',
+    'uses' => 'pageController@getIndex',
 ]);
 
-Route::get('gallery',[
+Route::get('gallery', [
     'as' => 'gallery',
-    'uses'=>'pageController@getGallery',
+    'uses' => 'pageController@getGallery',
 ]);
 
-Route::get('about',[
+Route::get('about', [
     'as' => 'about',
-    'uses'=>'pageController@getAbout',
+    'uses' => 'pageController@getAbout',
 ]);
 
-Route::get('contact',[
+Route::get('contact', [
     'as' => 'contact',
-    'uses'=>'pageController@getContact',
+    'uses' => 'pageController@getContact',
 ]);
 
-Route::get('login',[
-  'as' => 'login',
-  'uses'=>'pageController@getLogin',
+Route::get('login', [
+    'as' => 'login',
+    'uses' => 'pageController@getLogin',
 ]);
 
-Route::get('register',[
-  'as' => 'register',
-  'uses'=>'pageController@getRegister',
+Route::get('register', [
+    'as' => 'register',
+    'uses' => 'pageController@getRegister',
 ]);
 
-Route::get('test-api',[
-  'as' => 'test-api',
-  'uses'=>'pageController@getRegister',
+Route::get('test-api', [
+    'as' => 'test-api',
+    'uses' => 'pageController@getRegister',
 ]);
+
+Route::post('login', 'pageController@postLogin');
+
+Route::get('', 'homeController@getIndex');
+
+
+//Route::group(['middleware' => 'auth'], function () {
+//    Route::get('exams', 'pageController@getExams');
+//});
+
+Route::get('exams', 'pageController@getExams')->middleware('exams');
