@@ -60,8 +60,8 @@ Route::post('login', 'pageController@postLogin');
 Route::get('', 'homeController@getIndex');
 
 
-//Route::group(['middleware' => 'auth'], function () {
-//    Route::get('exams', 'pageController@getExams');
-//});
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('exams', 'pageController@getExams');
+});
 
-Route::get('exams', 'pageController@getExams')->middleware('exams');
+//Route::get('exams', 'pageController@getExams')->middleware('exams');
