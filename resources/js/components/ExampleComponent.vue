@@ -1,7 +1,10 @@
 <template>
     <div class="container">
-        HIHIHI
-
+        <div v-for="(user,index) in users">
+            <div class="email">{{user.email}}</div>
+            <div class="name">{{user.name}}</div>
+            <div class="id_exam">{{user.id_exam}}</div>
+        </div>
     </div>
 </template>
 
