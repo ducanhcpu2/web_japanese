@@ -2,7 +2,7 @@
     <div class="container">
     	<div class="brand"></div>
     	<div class="path_list">
-    		<router-lin to 
+        vue/dist/vue
     	</div>
     </div>
 </template>

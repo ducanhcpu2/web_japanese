@@ -1770,6 +1770,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'ExampleComponent',
   data: function data() {
@@ -1781,7 +1783,7 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     axios.get('/api/admin/list-users').then(function (response) {
-      return _this.users = response;
+      return _this.users = response.data;
     }).then(console.log(this.users));
   }
 });
@@ -36830,7 +36832,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [_vm._v("\n    HIHIHI\n\n")])
+  return _c(
+    "div",
+    { staticClass: "container" },
+    _vm._l(_vm.users, function(user, index) {
+      return _c("div", [
+        _c("div", [_vm._v(_vm._s(user.id))]),
+        _vm._v(" "),
+        _c("div", [_vm._v(_vm._s(user.email))])
+      ])
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -49003,7 +49016,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('App', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue").default);
+Vue.component('App', __webpack_require__(/*! ./components/ExampleComponent.vue */ "./resources/js/components/ExampleComponent.vue")["default"]);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -49035,7 +49048,7 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
  */
 
 try {
-  window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js").default;
+  window.Popper = __webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js")["default"];
   window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
   __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
@@ -49165,8 +49178,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/bacramo/Documents/DucAnhCPU/web_japanese/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/bacramo/Documents/DucAnhCPU/web_japanese/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/cpu2/Desktop/web_japanese/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/cpu2/Desktop/web_japanese/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
