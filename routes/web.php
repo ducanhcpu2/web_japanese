@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('index');
+//});
 
-Route::get('index', [
+Route::get('', [
     'as' => 'index',
     'uses' => 'pageController@getIndex',
 ]);
@@ -45,6 +45,8 @@ Route::get('register', [
     'uses' => 'pageController@getRegister',
 ]);
 
+Route::post('register', 'registerController@register');
+
 Route::get('test-api', [
     'as' => 'test-api',
     'uses' => 'pageController@getRegister',
@@ -57,7 +59,10 @@ Route::get('admin', [
 
 Route::post('login', 'pageController@postLogin');
 
-Route::get('', 'homeController@getIndex');
+Route::get('logout', [
+    'as' => 'logout',
+    'uses' => 'homeController@logout',
+]);
 
 
 Route::group(['middleware' => 'auth'], function () {
@@ -65,3 +70,4 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 //Route::get('exams', 'pageController@getExams')->middleware('exams');
+

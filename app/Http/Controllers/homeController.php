@@ -1,16 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class homeController extends Controller
 {
-    public function __construct() {
-        $this->middleware('auth');
-    }
-
-    public function getIndex() {
-        return 'Đăng nhập thành công!';
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        return redirect('/index');
     }
 }

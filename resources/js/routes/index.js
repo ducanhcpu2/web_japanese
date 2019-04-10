@@ -17,6 +17,10 @@
 // import TokenHistory from '../pages/TokenHistory';
 // import Guide from '../pages/Guide';
 import admin from '../component/user.vue';
+import Vue from 'vue'
+import Router from 'vue-router'
+
+Vue.use(Router);
 
 // const routes = [
 //   {

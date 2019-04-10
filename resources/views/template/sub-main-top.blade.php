@@ -30,8 +30,18 @@
                             </ul>
                         </li>
                         <li><a href="{{route('contact')}}">Contact Us</a></li>
-                        <li><a href="{{route('login')}}" class="active">Login</a></li>
                         <li><a href="{{route('register')}}" class="active">Register</a></li>
+                        </br>
+                        <li>
+                            @if(!Auth::check())
+                            <a href="{{route('login')}}" class="active">Login</a>
+                                @else
+                                <p>{{Auth::user()->name}}さん こんにちは</p>
+                            @endif
+                        </li>
+                        <li>
+                            <a href="{{route('logout')}}">Logout</a>
+                        </li>
                     </ul>
                 </nav>
             </div>

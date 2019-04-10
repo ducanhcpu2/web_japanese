@@ -67,7 +67,7 @@ class pageController extends Controller
         if (Auth::Attempt($user)) {
             return redirect()->route('index');
         } else {
-            return redirect()->back()->with(['flag' => 'danger', 'notification' => 'bạn đã đăng nhập không thành công']);
+            return redirect()->back()->with('notification', 'bạn đã đăng nhập không thành công');
         }
     }
 

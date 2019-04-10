@@ -37,7 +37,9 @@
 </script>
 <style scoped> 
     .container {
-        width: 80%;
+      position: absolute;
+      right: 0;
+      width: 81.9%;
     }
     
     table {

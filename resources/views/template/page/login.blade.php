@@ -30,17 +30,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="form-info">
                 <h2>Login</h2>
             </div>
-            @if(Session::has('notification'))
-                <div class="alert alert-{{Session::get('flag')}}">{{Session::get('notification')}}</div>
-            @endif
-            <div class="email-w3l">
+{{--            @if(Session::has('notification'))--}}
+{{--                <div class="alert alert-danger {{Session::get('flag')}}">{{Session::get('notification')}}</div>--}}
+{{--            @endif--}}
+            <div class="email-w3l {{ $errors->has('email') ? 'has-error' : '' }}">
                 <span class="i1"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
                 <input class="email" type="email" name="email" placeholder="Email" required="">
+                @if ($errors->has('email'))
+
+                    <span class="alert alert-danger">{{ $errors->first('email') }}</span>
+
+                @endif
             </div>
-            <div class="pass-w3l">
+            <div class="pass-w3l {{ $errors->has('pass') ? 'has-error' : '' }}">
                 <!---728x90--->
                 <span class="i2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
                 <input class="pass" type="password" name="pass" placeholder="Password" required="">
+                @if ($errors->has('pass'))
+
+                    <span class="alert alert-danger">{{ $errors->first('pass') }}</span>
+
+                @endif
             </div>
             <div class="form-check">
                 <div class="left">

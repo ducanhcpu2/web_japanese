@@ -13,6 +13,7 @@ class AdminController extends Controller
         $users = User::all();
         return $users;
     }
+
 }
 
 
