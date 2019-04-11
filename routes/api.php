@@ -22,3 +22,17 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('list-users', 'API\AdminController@getUsers');
 });
 
+//list information of current user
+Route::get('getInforUser','API\UserController@getInforUser');
+
+//list all exams
+Route::get('getListExams','API\ExamsController@getListExams');
+
+//list all questions in an exam
+Route::get('getListQuestion','API\ExamsController@getListQuestion');
+
+//list all lesson
+Route::get('getListLesson','API\LessonController@getListLesson');
+
+//getting content of a lesson
+Route::get('getContentLesson','API\LessonController@getContentLesson');
