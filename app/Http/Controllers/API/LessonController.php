@@ -16,12 +16,13 @@ class LessonController extends Controller
     public function getContentLesson(Request $request)
     {
         $lesson = $request->id_lesson;
-        $query = Lesson::select('lesson_name', 'id_grammar', 'grammar.content'
+        $query = Lesson::select('lesson.id_lesson','lesson_name', 'id_gra', 'grammar.content'
             , 'id_voca', 'vocabularry.content', 'mean', 'sound')
-            ->join('vocabularry', 'vocabularry.id_voca', 'lesson.id_voca')
-            ->join('grammar', 'grammar.id_gra', 'lesson.id_gra')
-            ->where('id_lesson', $lesson)
+            ->join('vocabularry', 'vocabularry.id_lesson', 'lesson.id_lesson')
+            ->join('grammar', 'grammar.id_lesson', 'lesson.id_lesson')
+            ->where('lesson.id_lesson', 1)
             ->get();
+        //$query = $query->where('lesson.id_lesson', 1)->get();
         return $query;
     }
 }
