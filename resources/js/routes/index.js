@@ -16,11 +16,27 @@
 // import Transactions from '../pages/Transactions';
 // import TokenHistory from '../pages/TokenHistory';
 // import Guide from '../pages/Guide';
-import admin from '../component/user.vue';
+import admin from '../component/user.vue'
+import exams from '../component/exams.vue'
 import Vue from 'vue'
 import Router from 'vue-router'
 
 Vue.use(Router);
+
+const routes = [
+    {
+        path: '/admin',
+        component: admin,
+        name: 'admin'
+    },
+    {
+        path: '/exams',
+        component: exams,
+        name: 'exams'
+    },
+]
+
+export default routes;
 
 // const routes = [
 //   {
@@ -124,11 +140,3 @@ Vue.use(Router);
 // ]
 
 
-const routes = [
-  {
-    path: '/admin',
-    component: admin,
-    name: 'admin'
-  },
-]
-export default routes;

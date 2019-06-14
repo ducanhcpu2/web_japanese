@@ -15,7 +15,13 @@
                         <div class="w3ls_banner_txt text-center">
                             <h3 class="w3ls_pvt-title text-wh text-uppercase let">日本語</h3>
                             <p class="text-li">きんべんはせいこうのはは</p>
-                            <a href="#" target="_blank" class="btn button-style mt-sm-5 mt-4">Learning now</a>
+                            @if(!Auth::check())
+                                <a href="#" target="_blank" class="btn button-style mt-sm-5 mt-4">đăng nhập để Làm bài thi/受験するにはログインしてください</a>
+                            @else
+                                <p></p>
+                                <a href="{{route('exams')}}" target="_blank" class="btn button-style mt-sm-5 mt-4">xin chào {{Auth::user()->name}} </br> bắt đầu vào làm bài kiểm tra/テストをはじめます</a>
+
+                            @endif
                         </div>
                     </div>
                 </li>

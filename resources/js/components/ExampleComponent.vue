@@ -12,13 +12,14 @@
 </template>
 
 <script>
-    import sideBar from './sideBar.vue';
+    import sideBar from './sideBar.vue'
     import userList from './user.vue'
+    import allExams from './exams.vue'
     export default {
         name:'ExampleComponent',
         components: {
             sideBar,
-            userList
+            userList,
         }
     }
 </script>

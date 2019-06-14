@@ -15,9 +15,9 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <meta name="base-url" content="{{ url('/') }}">
-  <!-- @if (Auth::check() && !Auth::user()->isAdmin())
-      <meta name="authenticated" content="1">
-  @endif -->
+{{--  <!-- @if (Auth::check() && !Auth::user()->isAdmin())--}}
+{{--      <meta name="authenticated" content="1">--}}
+{{--  @endif -->--}}
 
 
   <title>{{ config('app.name', 'MoreCoin') }}</title>
@@ -39,7 +39,9 @@
   @endif -->
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">
+      <app></app>
+  </div>
   <script src="{{ mix('/js/app.js') }}"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script> -->
 </body>

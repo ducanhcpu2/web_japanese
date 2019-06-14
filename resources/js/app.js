@@ -20,10 +20,14 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
-Vue.component('App', require('./components/ExampleComponent.vue').default);
+// Vue.component('App', require('./components/ExampleComponent.vue').default);
+// Vue.component('allEx', require('./components/exams.vue'));
 import App from './components/ExampleComponent.vue';
+import allExams from './components/exams.vue';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+
+// var allExams = Vue.component('allExams', require('./components/exams.vue'));
 
 Vue.use(VueRouter);
 
@@ -35,8 +39,18 @@ Vue.use(VueRouter);
 
 const router = new VueRouter({});
 
+// const app = new Vue({
+//     el: '#app',
+//     router,
+//     render: h => h(App),
+// });
+
+
 const app = new Vue({
     el: '#app',
     router,
-    render: h => h(App),
+    components: {
+        'app': App,
+        'allexams': allExams
+    }
 });

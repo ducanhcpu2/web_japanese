@@ -66,7 +66,10 @@ Route::get('logout', [
 
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('exams', 'pageController@getExams');
+    Route::get('exams',[
+        'as' => 'exams',
+        'uses' => 'pageController@getExams',
+    ]);
 });
 
 //Route::get('exams', 'pageController@getExams')->middleware('exams');
