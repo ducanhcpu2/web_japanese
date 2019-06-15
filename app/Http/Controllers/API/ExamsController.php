@@ -15,8 +15,8 @@ class ExamsController extends Controller
         return $exams;
     }
 
-    public function getListQuestion()
+    public function getListQuestion(Request $request)
     {
-        return Tasks::all();
+        return Tasks::select('tasks.id_task')->where('tasks.id_exam', $request->id_exam)->get();;
     }
 }

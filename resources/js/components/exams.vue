@@ -13,7 +13,9 @@
         <th>{{obj.topic}}</th>
         <th>{{obj.status}}</th>
         <th>{{obj.level}}</th>
-        <th></th>
+        <th>
+          <router-link :to="{ name: 'SubTestExams' ,params :{id : obj.id_exam} }">test</router-link>
+        </th>
       </tr>
     </table>
   </div>
@@ -21,10 +23,10 @@
 
 <script>
     export default {
-        name:'exams',
-        data(){
+        name: 'exams',
+        data() {
             return {
-                allExams:[],
+                allExams: [],
             }
         },
         created() {
@@ -32,7 +34,7 @@
                 .get('/api/getListExams')
                 .then(response => (this.allExams = response.data))
                 .then(console.log(this.allExams))
-        }
+        },
     }
 </script>
 <style scoped>

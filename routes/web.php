@@ -71,6 +71,13 @@ Route::group(['middleware' => 'auth'], function () {
         'uses' => 'pageController@getExams',
     ]);
 });
+//
+//Route::group(['middleware' => 'auth'], function () {
+//    Route::get('sub_test_exams',[
+//        'as' => 'sub_test_exams',
+//        'uses' => 'pageController@getExams',
+//    ]);
+//});
 
 //Route::get('exams', 'pageController@getExams')->middleware('exams');
 

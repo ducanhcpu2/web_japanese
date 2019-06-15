@@ -18,8 +18,10 @@
 // import Guide from '../pages/Guide';
 import admin from '../component/user.vue'
 import exams from '../component/exams.vue'
+
 import Vue from 'vue'
 import Router from 'vue-router'
+import SubTestExams from "../components/SubTestExams";
 
 Vue.use(Router);
 
@@ -34,6 +36,11 @@ const routes = [
         component: exams,
         name: 'exams'
     },
+    {
+        path: '/SubTestExams',
+        component: SubTestExams,
+        name: 'SubTestExams',
+    }
 ]
 
 export default routes;

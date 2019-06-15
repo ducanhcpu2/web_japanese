@@ -40,7 +40,7 @@
 </head>
 <body>
 <div id="app">
-    <allexams></allexams>
+    <router-view />
 </div>
 <script src="{{ mix('/js/app.js') }}"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.js"></script> -->

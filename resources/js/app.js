@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -23,21 +22,43 @@ window.Vue = require('vue');
 // Vue.component('App', require('./components/ExampleComponent.vue').default);
 // Vue.component('allEx', require('./components/exams.vue'));
 import App from './components/ExampleComponent.vue';
-import allExams from './components/exams.vue';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import admin from './components/user.vue'
+import exams from './components/exams.vue'
+import SubTestExams from './components/SubTestExams.vue'
 
 // var allExams = Vue.component('allExams', require('./components/exams.vue'));
 
 Vue.use(VueRouter);
 
-/**
+/**`
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const router = new VueRouter({});
+const router = new VueRouter({
+  mode: 'history',
+  routes: [
+    {
+      path: '/admin',
+      component: admin,
+      name: 'admin'
+    },
+    {
+      path: '/exams',
+      component: exams,
+      name: 'exams'
+    },
+    {
+      path: '/SubTestExams',
+      component: SubTestExams,
+      name: 'SubTestExams',
+      props: true,
+    }
+  ],
+});
 
 // const app = new Vue({
 //     el: '#app',
@@ -47,10 +68,9 @@ const router = new VueRouter({});
 
 
 const app = new Vue({
-    el: '#app',
-    router,
-    components: {
-        'app': App,
-        'allexams': allExams
-    }
+  el: '#app',
+  router,
+  components: {
+    'app': App,
+  }
 });
