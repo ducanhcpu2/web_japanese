@@ -29,6 +29,6 @@ class Tasks extends Model
         ];
     protected $hidden
         = [
-            'key_text', 'solution',
+             'solution',
         ];
 }

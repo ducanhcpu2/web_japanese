@@ -1814,6 +1814,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "sub_test_exams",
   props: {
@@ -1823,7 +1833,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      question: []
+      question: [],
+      qs: [],
+      index: 0,
+      picked: []
     };
   },
   mounted: function mounted() {
@@ -37862,25 +37875,108 @@ var render = function() {
   return _c("div", [
     _c(
       "table",
-      [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._l(_vm.question, function(qs, index) {
-          return _c("tr", [_c("th", [_vm._v(_vm._s(qs.id_task))])])
-        })
-      ],
-      2
+      _vm._l(_vm.question, function(qs, index) {
+        return _c("tr", [
+          _c("div", { attrs: { id: "" } }, [
+            _c("div", [_vm._v(_vm._s(qs.id_task))]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", [_vm._v(_vm._s(qs.content))]),
+            _vm._v(
+              "\n        từ trong chỗ trống : " + _vm._s(qs.key_text) + " "
+            ),
+            _c("br"),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: index,
+                  expression: "index"
+                }
+              ],
+              attrs: { type: "radio", id: "a", value: "a" },
+              domProps: { checked: _vm._q(index, "a") },
+              on: {
+                change: function($event) {
+                  index = "a"
+                }
+              }
+            }),
+            _vm._v(" " + _vm._s(qs.sub_task_a)),
+            _c("br"),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: index,
+                  expression: "index"
+                }
+              ],
+              attrs: { type: "radio", id: "b", value: "b" },
+              domProps: { checked: _vm._q(index, "b") },
+              on: {
+                change: function($event) {
+                  index = "b"
+                }
+              }
+            }),
+            _vm._v(" " + _vm._s(qs.sub_task_b)),
+            _c("br"),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: index,
+                  expression: "index"
+                }
+              ],
+              attrs: { type: "radio", id: "c", value: "c" },
+              domProps: { checked: _vm._q(index, "c") },
+              on: {
+                change: function($event) {
+                  index = "c"
+                }
+              }
+            }),
+            _vm._v(" " + _vm._s(qs.sub_task_c)),
+            _c("br"),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: index,
+                  expression: "index"
+                }
+              ],
+              attrs: { type: "radio", id: "d", value: "d" },
+              domProps: { checked: _vm._q(index, "d") },
+              on: {
+                change: function($event) {
+                  index = "d"
+                }
+              }
+            }),
+            _vm._v(" " + _vm._s(qs.sub_task_d)),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", [_vm._v(_vm._s(index))])
+          ])
+        ])
+      }),
+      0
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [_c("th", [_vm._v("Id")])])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

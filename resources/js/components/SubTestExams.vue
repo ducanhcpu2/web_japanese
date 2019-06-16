@@ -1,11 +1,21 @@
 <template>
   <div>
     <table>
-      <tr>
-        <th>Id</th>
-      </tr>
+
       <tr v-for="(qs,index) in question">
-        <th>{{qs.id_task}}</th>
+        <div id="">
+          <div>{{qs.id_task}}</div> <br>
+          <div>{{qs.content}}</div>
+          từ trong chỗ trống : {{qs.key_text}} <br>
+
+
+          <input type="radio"  id="a" value="a" v-model="index"> {{qs.sub_task_a}}<br>
+          <input type="radio"  id="b" value="b" v-model="index"> {{qs.sub_task_b}}<br>
+          <input type="radio"  id="c" value="c" v-model="index"> {{qs.sub_task_c}}<br>
+          <input type="radio"  id="d" value="d" v-model="index"> {{qs.sub_task_d}}<br>
+          <span>{{index}}</span>
+        </div>
+
       </tr>
     </table>
   </div>
@@ -22,6 +32,10 @@
       data() {
         return {
           question:[],
+          qs:[],
+          index: 0,
+          picked :[],
+
         }
       },
       mounted() {
