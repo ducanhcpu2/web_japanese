@@ -37,5 +37,5 @@ Route::get('getListLesson','API\LessonController@getListLesson');
 //getting content of a lesson
 Route::get('getContentLesson','API\LessonController@getContentLesson');
 
-// mark test
-Route::get('markTest','API\ExamsController@markTest');
+//get Point of exams
+Route::get('point','API\ExamsController@getPoint');
