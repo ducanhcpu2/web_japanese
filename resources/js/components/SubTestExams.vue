@@ -20,7 +20,7 @@
     </table>
     <div>
       Chấm bài <button @click="mark()">Submit</button> <br>
-      Điểm của bạn là :
+      Điểm của bạn là : {{totalScore}}
     </div>
 
   </div>

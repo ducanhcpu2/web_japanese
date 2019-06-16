@@ -38007,7 +38007,7 @@ var render = function() {
       ),
       _vm._v(" "),
       _c("br"),
-      _vm._v("\n    Điểm của bạn là :\n  ")
+      _vm._v("\n    Điểm của bạn là : " + _vm._s(_vm.totalScore) + "\n  ")
     ])
   ])
 }
