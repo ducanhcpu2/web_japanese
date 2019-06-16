@@ -36,3 +36,6 @@ Route::get('getListLesson','API\LessonController@getListLesson');
 
 //getting content of a lesson
 Route::get('getContentLesson','API\LessonController@getContentLesson');
+
+// mark test
+Route::get('markTest','API\ExamsController@markTest');

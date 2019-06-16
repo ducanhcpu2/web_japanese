@@ -21,4 +21,9 @@ class ExamsController extends Controller
                             ,'tasks.sub_task_c','tasks.sub_task_d','tasks.key_text')
                             ->where('tasks.id_exam', $request->id_exam)->get();
     }
+
+    public function markTest(Request $request)
+    {
+
+    }
 }
