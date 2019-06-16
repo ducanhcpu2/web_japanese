@@ -1824,6 +1824,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "sub_test_exams",
   props: {
@@ -1836,7 +1841,8 @@ __webpack_require__.r(__webpack_exports__);
       question: [],
       qs: [],
       index: 0,
-      picked: []
+      picked: [],
+      totalScore: 0
     };
   },
   mounted: function mounted() {
@@ -1850,6 +1856,17 @@ __webpack_require__.r(__webpack_exports__);
     }).then(function (response) {
       return _this.question = response.data;
     }).then(console.log(this.question));
+  },
+  methods: {
+    mark: function mark() {
+      var _this2 = this;
+
+      axios.get('/api/markTest', {
+        params: {}
+      }).then(function (response) {
+        return _this2.totalScore = response.data;
+      }).then(console.log(this.question));
+    }
   }
 });
 
@@ -37973,7 +37990,25 @@ var render = function() {
         ])
       }),
       0
-    )
+    ),
+    _vm._v(" "),
+    _c("div", [
+      _vm._v("\n    Chấm bài "),
+      _c(
+        "button",
+        {
+          on: {
+            click: function($event) {
+              return _vm.mark()
+            }
+          }
+        },
+        [_vm._v("Submit")]
+      ),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v("\n    Điểm của bạn là :\n  ")
+    ])
   ])
 }
 var staticRenderFns = []

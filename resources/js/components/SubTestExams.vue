@@ -18,6 +18,11 @@
 
       </tr>
     </table>
+    <div>
+      Chấm bài <button @click="mark()">Submit</button> <br>
+      Điểm của bạn là :
+    </div>
+
   </div>
 </template>
 
@@ -35,6 +40,7 @@
           qs:[],
           index: 0,
           picked :[],
+          totalScore : 0,
 
         }
       },
@@ -46,6 +52,16 @@
             }})
           .then(response => (this.question = response.data))
           .then(console.log(this.question))
+      },
+      methods: {
+          mark() {
+            axios
+              .get(('/api/markTest') ,{params: {
+
+                }})
+              .then(response => (this.totalScore = response.data))
+              .then(console.log(this.question))
+        }
       }
     }
 
