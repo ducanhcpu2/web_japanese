@@ -1,19 +1,20 @@
 <template>
-  <div>
+  <div style="right: 20px">
     <table>
-      <tr v-for="(qs,index) in question">
-        <div id="">
-          <div>{{qs.id_task}}</div>
-          <br>
-          <div>{{qs.content}}</div>
-          từ trong chỗ trống : {{qs.key_text}} <br>
-          <input type="radio" :name="`question_${index}`" value="a" v-model="picked[index]"> {{qs.sub_task_a}}<br>
-          <input type="radio" :name="`question_${index}`" value="b" v-model="picked[index]"> {{qs.sub_task_b}}<br>
-          <input type="radio" :name="`question_${index}`" value="c" v-model="picked[index]"> {{qs.sub_task_c}}<br>
-          <input type="radio" :name="`question_${index}`" value="d" v-model="picked[index]"> {{qs.sub_task_d}}<br>
-          <span>{{index}}</span>
-        </div>
-      </tr>
+      <div>
+        <tr v-for="(qs,index) in question">
+          <div id="">
+            <div>câu số : {{qs.id_task}}</div>
+            <br>
+            <div>{{qs.content}}</div>
+            từ trong chỗ trống : {{qs.key_text}} <br>
+            <input type="radio" :name="`question_${index}`" value="a" v-model="picked[index]"> {{qs.sub_task_a}}<br>
+            <input type="radio" :name="`question_${index}`" value="b" v-model="picked[index]"> {{qs.sub_task_b}}<br>
+            <input type="radio" :name="`question_${index}`" value="c" v-model="picked[index]"> {{qs.sub_task_c}}<br>
+            <input type="radio" :name="`question_${index}`" value="d" v-model="picked[index]"> {{qs.sub_task_d}}<br>
+          </div>
+        </tr>
+      </div>
     </table>
     <div>
       Chấm bài <button @click="submit()">Submit</button> <br>

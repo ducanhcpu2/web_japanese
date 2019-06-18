@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="">
         <sideBar></sideBar>
         <div class="content">
             <div class="btn_exit">Exit</div>

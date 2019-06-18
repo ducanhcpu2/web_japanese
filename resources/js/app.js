@@ -3,6 +3,7 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
+import ListLesson from "./components/ListLesson";
 
 require('./bootstrap');
 
@@ -27,6 +28,7 @@ import VueRouter from 'vue-router';
 import admin from './components/user.vue'
 import exams from './components/exams.vue'
 import SubTestExams from './components/SubTestExams.vue'
+import DetailLesson from "./components/DetailLesson";
 
 // var allExams = Vue.component('allExams', require('./components/exams.vue'));
 
@@ -55,6 +57,18 @@ const router = new VueRouter({
       path: '/SubTestExams',
       component: SubTestExams,
       name: 'SubTestExams',
+      props: true,
+    },
+    {
+      path: '/ListLesson',
+      component: ListLesson,
+      name: 'ListLesson',
+      props: true,
+    },
+    {
+      path: '/DetailLesson',
+      component: DetailLesson,
+      name: 'DetailLesson',
       props: true,
     }
   ],

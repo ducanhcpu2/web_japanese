@@ -31,11 +31,18 @@ Route::get('getListExams','API\ExamsController@getListExams');
 //list all questions in an exam
 Route::get('getListQuestion','API\ExamsController@getListQuestion');
 
-//list all lesson
+//list all lessons
 Route::get('getListLesson','API\LessonController@getListLesson');
 
 //getting content of a lesson
 Route::get('getContentLesson','API\LessonController@getContentLesson');
+
+
+//get vocabularry
+Route::get('getVocabularry','API\LessonController@getVoca');
+
+//get grammar
+Route::get('getGrammar','API\LessonController@getGrammar');
 
 //get Point of exams
 Route::get('point','API\ExamsController@getPoint');
